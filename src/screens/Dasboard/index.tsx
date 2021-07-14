@@ -11,6 +11,7 @@ import {
   User,
   UserGreeting,
   UserName,
+  LogoutButton,
   Icon,
   HighlightCards,
   Transactions,
@@ -22,7 +23,7 @@ export interface IDataList extends ITransactionCardData {
   id: string
 }
 
-export function Dasboard() {
+export function Dashboard() {
   const data: IDataList[] = [
     {
       id: "1",
@@ -73,7 +74,9 @@ export function Dasboard() {
             </User>
           </UserInfo>
 
-          <Icon name="power"/>
+          <LogoutButton onPress={() => {}} >
+            <Icon name="power"/>
+          </LogoutButton>
         </UserWrapper>
 
       </Header>
